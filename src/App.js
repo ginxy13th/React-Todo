@@ -57,7 +57,7 @@ class App extends React.Component {
       <div>
         <h2>Welcome to your Todo App!</h2>
         <ToDoForm addTask={this.addTask}/>
-        <ToDoList tasks={this.state.tasks} toggleTask={this.toggleItem}/>
+        <ToDoList tasks={this.state.tasks} toggleTask={this.toggleTask}/>
       </div>
     );
   }

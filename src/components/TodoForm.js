@@ -17,6 +17,9 @@ class ToDoForm extends React.Component {
     handleSubmit = e => {
         e.preventDefault();
         this.props.addTask(this.state.task)
+        this.setState({
+            task: ''
+        })
     }
 
     render(){
