@@ -10,12 +10,12 @@ class ToDoForm extends React.Component {
 
     handleChange = e => {
         this.setState({
-            task: e.target.value
+        task: e.target.value
         });
     };
     handleSubmit = e => {
         e.preventDefault();
-        this.props.addTask(this.state.task)
+        this.props.addTask(this.state.Task)
     }
 
     render(){

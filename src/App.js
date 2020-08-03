@@ -1,7 +1,7 @@
 import React from 'react';
 import ToDoForm from './components/TodoForm.js';
 import ToDoList from './components/TodoList.js';
-// import Task from './components/Todo.js';
+ import Task from './components/Todo.js';
 
 const tasks = [{
   task: 'Organize Garage',
