@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 class ToDoForm extends React.Component {
     constructor() {
         super()
@@ -15,7 +16,7 @@ class ToDoForm extends React.Component {
     };
     handleSubmit = e => {
         e.preventDefault();
-        this.props.addTask(this.state.Task)
+        this.props.addTask(this.state.task)
     }
 
     render(){

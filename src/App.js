@@ -1,7 +1,7 @@
 import React from 'react';
 import ToDoForm from './components/TodoForm.js';
 import ToDoList from './components/TodoList.js';
- import Task from './components/Todo.js';
+
 
 const tasks = [{
   task: 'Organize Garage',
@@ -39,14 +39,14 @@ class App extends React.Component {
 
   toggleTask = taskId => {
     this.setState({
-      tasks: this.state.tasks.map(Task => {
-        if (Task.id === taskId) {
+      tasks: this.state.tasks.map(task => {
+        if (task.id === taskId) {
           return {
-            ...Task,
-            completed: !Task.completed
+            ...task,
+            completed: !task.completed
           };
         } else {
-          return Task;
+          return task;
         }
       })
     });
